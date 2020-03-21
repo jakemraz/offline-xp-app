@@ -1,33 +1,42 @@
 {
-    "providers": {
-        "awscloudformation": {
-            "AuthRoleName": "amplify-offline-xp-app-dev-00030-authRole",
-            "UnauthRoleArn": "arn:aws:iam::332346530942:role/amplify-offline-xp-app-dev-00030-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::332346530942:role/amplify-offline-xp-app-dev-00030-authRole",
-            "Region": "us-west-2",
-            "DeploymentBucketName": "amplify-offline-xp-app-dev-00030-deployment",
-            "UnauthRoleName": "amplify-offline-xp-app-dev-00030-unauthRole",
-            "StackName": "amplify-offline-xp-app-dev-00030",
-            "StackId": "arn:aws:cloudformation:us-west-2:332346530942:stack/amplify-offline-xp-app-dev-00030/c39776c0-6b84-11ea-a45e-021df5e6d67a",
-            "AmplifyAppId": "dhutmxxte2269"
-        }
-    },
-    "api": {
-        "amplifyDatasource": {
-            "service": "AppSync",
-            "providerPlugin": "awscloudformation",
-            "output": {
-                "authConfig": {
-                    "additionalAuthenticationProviders": [],
-                    "defaultAuthentication": {
-                        "authenticationType": "API_KEY",
-                        "apiKeyConfig": {
-                            "description": "",
-                            "apiKeyExpirationDays": 7
-                        }
-                    }
-                }
-            }
-        }
-    }
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "amplify-offline-xp-app-dev-00030-authRole",
+			"UnauthRoleArn": "arn:aws:iam::332346530942:role/amplify-offline-xp-app-dev-00030-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::332346530942:role/amplify-offline-xp-app-dev-00030-authRole",
+			"Region": "us-west-2",
+			"DeploymentBucketName": "amplify-offline-xp-app-dev-00030-deployment",
+			"UnauthRoleName": "amplify-offline-xp-app-dev-00030-unauthRole",
+			"StackName": "amplify-offline-xp-app-dev-00030",
+			"StackId": "arn:aws:cloudformation:us-west-2:332346530942:stack/amplify-offline-xp-app-dev-00030/c39776c0-6b84-11ea-a45e-021df5e6d67a",
+			"AmplifyAppId": "dhutmxxte2269"
+		}
+	},
+	"api": {
+		"amplifyDatasource": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "API_KEY",
+						"apiKeyConfig": {
+							"description": "",
+							"apiKeyExpirationDays": 7
+						}
+					}
+				},
+				"GraphQLAPIIdOutput": "m3sqzy7yhnfxlk2b5cueumsvie",
+				"GraphQLAPIEndpointOutput": "https://cnbctrm4rvfuplpxhqxaxha2pa.appsync-api.us-west-2.amazonaws.com/graphql",
+				"GraphQLAPIKeyOutput": "da2-7uklx3whzfgq3f5gvnlgurdtvi"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-offline-xp-app-dev-00030-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apiamplifyDatasource"
+			},
+			"lastPushTimeStamp": "2020-03-21T15:10:42.634Z",
+			"lastPushDirHash": "1lrNuqrAnuitd1OZ6dVMLyIp9dg="
+		}
+	}
 }
