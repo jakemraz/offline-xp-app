@@ -14,8 +14,10 @@ function App() {
   const [messages, updateMessages] = useState([])
 
   useEffect(() => {
+    console.log('useEffect')
     fetchMessages()
     const subscription = DataStore.observe(Message).subscribe(() => fetchMessages())
+    console.log('subscription')
     return () => subscription.unsubscribe()
   })
 
@@ -24,7 +26,9 @@ function App() {
   }
 
   async function fetchMessages() {
+    console.log('fetchMessages')
     const messages = await DataStore.query(Message)
+    console.log('query')
     updateMessages(messages)
   }
   async function createMessage() {
